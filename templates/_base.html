@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}KinderLearn{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <nav>
+        <img src="{% static "images/kinder.png" %}" alt="">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACTS</a></li>
+            <li><a  class="getstarted-btn" href="">GET STARTED</a></li>
+        </ul>
+
+    </nav>
+    <hr>
+    {% block content %}
+    <h1>HELLO WORLD</h1>
+    {% endblock content %}
+    <footer>© 2024 KinderLearn. All Rights Reserved.</footer>
+</body>
+</html>
